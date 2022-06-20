@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-add">
+    <h2>Add Product</h2>
+    <table id="form-add-product">
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" id="name">
+                <input type="text" id="index" style="display: none;">
+            </td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="number" name="price" id="price"></td>
+        </tr>
+        <tr>
+            <td>SLL</td>
+            <td><input type="number" name="sll" id="sll"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button id="add-product-button" onclick="addProduct()">Add</button>
+                <button onclick="updateProduct()" id="update-product-button" style="display:none">Update</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="table-list">
+    <h2>List Product</h2>
+    <input type="text" id="keywords" placeholder="">
+    <button onclick="searchProduct()">Search</button>
+    <table id="table-list-product">
+        <thead>
+        <tr id="head-title">
+            <td>STT</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>SLL</td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody id="list-product">
+
+        </tbody>
+    </table>
+    <p id="total-product"></p>
+</div>
+
+
+
+<script src="my.js"></script>
+</body>
+</html>
